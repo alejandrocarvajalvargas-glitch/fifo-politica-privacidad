@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminar cuenta y datos · FIFO</title>
+<style>
+  :root { color-scheme: light; --ink:#17231D; --sub:#56665E; --brand:#1B4D3E; --bg:#F3F6F1; --line:#D5DCD5; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ink:#E7EEE9; --sub:#AFC0B6; --brand:#6EE7B7; --bg:#0E1A15; --line:#2A3B33; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { color: var(--brand); font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; color: var(--brand); }
+  .meta { color: var(--sub); font-size: 14px; margin-bottom: 24px; }
+  ol, ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .caja { border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; background: rgba(27,77,62,.06); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+<h1>Eliminar tu cuenta y tus datos en FIFO</h1>
+<p class="meta">App: <strong>FIFO</strong> (paquete <code>co.cvalejo.fifo</code>) · Operada por Supertiendas Cañaveral, Sede Ingenio · Última actualización: 23 de noviembre de 2026</p>
+
+<p>Si usas FIFO con una cuenta autorizada por tu empresa y quieres que eliminemos tu cuenta y los datos asociados, sigue los pasos de esta página.</p>
+
+<h2>Cómo solicitar la eliminación</h2>
+<ol>
+  <li>Escribe a <strong>soporte@cvalejo.com</strong> desde el correo con el que entras a FIFO.</li>
+  <li>En el asunto escribe: <em>Eliminar mi cuenta FIFO</em>.</li>
+  <li>Incluye el nombre de tu sede o empresa, para que podamos ubicar tu cuenta.</li>
+  <li>Te responderemos para confirmar tu identidad. Solo procesamos solicitudes enviadas desde el correo de la cuenta.</li>
+  <li>Un administrador de tu empresa elimina la cuenta en FIFO. Te avisaremos cuando esté hecho.</li>
+</ol>
+
+<div class="caja">
+  <strong>Plazo:</strong> la eliminación se completa en un máximo de 30 días desde que confirmamos tu identidad.
+</div>
+
+<h2>Qué datos se eliminan</h2>
+<table>
+  <tr><th>Dato</th><th>Qué pasa</th></tr>
+  <tr><td>Correo y contraseña de la cuenta</td><td>Se eliminan de la autenticación de FIFO (Firebase Authentication).</td></tr>
+  <tr><td>Perfil de usuario (correo y permisos)</td><td>Se elimina.</td></tr>
+  <tr><td>Token de notificaciones del celular</td><td>Deja de usarse. Se borra al cerrar sesión o cuando el servicio de notificaciones lo invalida.</td></tr>
+</table>
+
+<h2>Qué datos se conservan y por cuánto tiempo</h2>
+<p>Los registros de inventario son información operativa de la tienda y no se pueden borrar sin afectar el control de vencimientos. Por eso se conservan, pero sin vincularlos a tu cuenta:</p>
+<table>
+  <tr><th>Dato</th><th>Conservación</th></tr>
+  <tr><td>Lotes registrados por tu cuenta (producto, cantidad, fecha de vencimiento, ubicación)</td><td>Se mantienen como registros de inventario de la tienda. Los vendidos, retirados o devueltos pasan al archivo tras 30 días sin cambios y se conservan allí para el historial de la empresa.</td></tr>
+  <tr><td>Nombre del operador que registró los lotes</td><td>Se conserva tal como se registró, como parte del historial de inventario de la tienda.</td></tr>
+  <tr><td>Correos de vencimientos enviados</td><td>Se conservan en la bitácora de la empresa por el periodo que ella defina; no contienen datos de tu cuenta más allá del correo de destino configurado por la empresa.</td></tr>
+</table>
+
+<h2>Preguntas</h2>
+<p>Para cualquier duda sobre esta solicitud o sobre tus datos, escribe a <strong>soporte@cvalejo.com</strong>. La política completa de tratamiento de datos está en la página de política de privacidad de FIFO.</p>
+</main>
+</body>
+</html>
