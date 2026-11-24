@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · FIFO</title>
+<style>
+  :root { color-scheme: light; --ink:#17231D; --sub:#56665E; --brand:#1B4D3E; --bg:#F3F6F1; --line:#D5DCD5; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --ink:#E7EEE9; --sub:#AFC0B6; --brand:#6EE7B7; --bg:#0E1A15; --line:#2A3B33; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { color: var(--brand); font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 8px; color: var(--brand); }
+  .meta { color: var(--sub); font-size: 14px; margin-bottom: 24px; }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  .aviso { border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; color: var(--sub); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidad</h1>
+<p class="meta">App: <strong>FIFO</strong> (paquete <code>co.cvalejo.fifo</code>) · Última actualización: 23 de noviembre de 2026</p>
+
+<p>Esta política explica qué datos trata la aplicación FIFO, para qué los usa y qué derechos tienen las personas que la usan. FIFO es una herramienta interna de control de inventario y vencimientos, de uso exclusivo del personal autorizado de <strong>Supertiendas Cañaveral</strong> (Sede Ingenio).</p>
+
+<h2>1. Responsable</h2>
+<p>Supertiendas Cañaveral, Sede Ingenio. Para cualquier consulta sobre privacidad:
+<strong>[correo de contacto — pendiente de confirmar]</strong>.</p>
+
+<h2>2. Datos que trata la aplicación</h2>
+<ul>
+  <li><strong>Datos de cuenta:</strong> correo electrónico y contraseña del usuario autorizado. La autenticación la gestiona Firebase Authentication (Google); la aplicación no guarda la contraseña en texto plano.</li>
+  <li><strong>Datos de inventario:</strong> código de barras escaneado, nombre y referencia del producto, cantidad, fecha de vencimiento, lote o ubicación, notas, proveedor y estado de gestión (en bodega, en tienda, vendido, retirado, etc.).</li>
+  <li><strong>Quién registra:</strong> correo de la cuenta o nombre del operador que hizo cada registro, y la fecha y hora del registro o del último cambio de estado.</li>
+  <li><strong>Avisos internos:</strong> los mensajes que publican los administradores y qué usuarios los han leído.</li>
+  <li><strong>Identificador de notificaciones:</strong> un token técnico del dispositivo Android que permite enviar notificaciones push (Firebase Cloud Messaging). Se borra al cerrar sesión.</li>
+  <li><strong>Cámara:</strong> se usa solo para leer códigos de barras en el momento del escaneo. La aplicación no guarda fotos ni video.</li>
+</ul>
+<p>La aplicación <strong>no</strong> recopila ubicación GPS, contactos, datos de salud, datos financieros ni datos de menores de edad.</p>
+
+<h2>3. Para qué se usan los datos</h2>
+<ul>
+  <li>Llevar el control de lotes, fechas de vencimiento y estados de inventario.</li>
+  <li>Calcular alertas de productos vencidos, en alerta o próximos a vencer.</li>
+  <li>Enviar avisos internos y notificaciones push a los usuarios autorizados.</li>
+  <li>Enviar un correo diario y un resumen semanal de vencimientos a los destinatarios configurados por la empresa.</li>
+  <li>Mantener un historial de auditoría de los movimientos de inventario.</li>
+</ul>
+<p>No se usan para publicidad, perfiles de comportamiento ni decisiones automatizadas que afecten a las personas.</p>
+
+<h2>4. Con quién se comparten</h2>
+<p>Los datos no se venden ni se ceden a terceros con fines comerciales. Solo los tratan los proveedores técnicos necesarios para que la aplicación funcione:</p>
+<ul>
+  <li><strong>Google Firebase</strong> (Authentication, Cloud Firestore y Cloud Messaging): almacenamiento de datos, inicio de sesión y notificaciones.</li>
+  <li><strong>Google Apps Script</strong>: procesa los correos de vencimientos y las notificaciones automáticas.</li>
+</ul>
+
+<h2>5. Conservación</h2>
+<p>Los lotes que están vendidos, retirados, devueltos o dados de baja se archivan automáticamente después de 30 días sin cambios. El archivo se conserva para el historial de la empresa y solo lo consultan los administradores. Los datos de cuenta se conservan mientras el usuario tenga acceso autorizado. Al retirar el acceso a un usuario, un administrador puede eliminar su cuenta.</p>
+
+<h2>6. Seguridad</h2>
+<p>El acceso a los datos requiere una cuenta autorizada por un administrador. Las reglas de Firestore limitan qué puede leer, crear, modificar o borrar cada usuario, y la comunicación con los servicios de Google va cifrada (HTTPS).</p>
+
+<h2>7. Derechos de las personas</h2>
+<p>Cualquier persona puede pedir acceso, corrección o eliminación de sus datos escribiendo al correo de contacto indicado en la sección 1. La empresa responde en un plazo razonable y, cuando la ley lo exige, dentro de los plazos legales aplicables en Colombia (Ley 1581 de 2012).</p>
+
+<h2>8. Menores de edad</h2>
+<p>FIFO es una herramienta de trabajo dirigida a personas mayores de 18 años. No está pensada para menores.</p>
+
+<h2>9. Cambios en esta política</h2>
+<p>Si cambia la forma en que se tratan los datos, esta página se actualiza y se indica la nueva fecha arriba.</p>
+
+<p class="aviso">Este documento describe el funcionamiento de la aplicación FIFO para Android y Windows. Revísalo con la persona responsable de la empresa antes de publicarlo en Play Console.</p>
+</main>
+</body>
+</html>
